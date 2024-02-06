@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: kate
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCS3DxzmjoBUnpYGSlmJDQ4vSYII2DIHolygEnRyoBrdD5uWBQkSH44IRUTjtXPNsdFRCUCAQp2M560Vka833RZwBCrUpns05SDbxR6pcpahGsipqXCsRqNtrWAvJx8h83rRLGIM+x6eNr58RAGbUpH/f1I89qgnsYXwpAkEgHXaj5gMhNUYQKKYui++XlcDL/Qm27wA39/7viVqusVyXY0azCuyG9uG/cLkcl7RWfdeuG3TaLGQaEhUDdYGk7OkemH49jTSoWix5sgJBfJcAUm6dyyWfxg91morKAWY2n4nvaP4z6DrcVQMDC12Maw6fB0ivczRLGiKqysQMbHi0SMtOh+0Uv2VGDjjQi93BQQO31z3eQBsRkuGpxjKmYTsCM20GvrJRvclMSdusVJiO8snUfLnE/e6HB0IS85r+HCzLM+dSU3uRXNPplAv8Z3KWmIQkr2yA27ljYA6rIzOEl8zphs81qjphSJojteZrq0S/8tU/nWomhrJbAN/9zntc8= kate@kate-pc
