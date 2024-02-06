@@ -6,7 +6,7 @@ variable "yc_token" {
   # default = "какое-то значение по умолчанию"
   // Прячет значение переменной из всех выводов
   // По умолчанию false
-  # sensitive = true
+  sensitive   = true
 }
 
 variable "datadog_api_url" {
@@ -17,6 +17,7 @@ variable "datadog_api_url" {
 variable "datadog_api_key" {
   description = "DataDog API key"
   type        = string
+  sensitive   = true
 }
 
 variable "datadog_app_key" {
