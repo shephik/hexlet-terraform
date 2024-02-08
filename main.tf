@@ -112,7 +112,7 @@ resource "yandex_lb_network_load_balancer" "default" {
 
   listener {
     name = "my-listener"
-    port = 8080
+    port = 80
     external_address_spec {
       ip_version = "ipv4"
     }
@@ -125,7 +125,7 @@ resource "yandex_lb_network_load_balancer" "default" {
       name = "http"
       http_options {
         port = 80
-        path = "/ping"
+        path = "/"
       }
     }
   }
