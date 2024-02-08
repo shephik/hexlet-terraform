@@ -2,3 +2,4 @@ secrets.*
 .terraform
 *.tfstate.*
 *.tfstate
+meta.txt
